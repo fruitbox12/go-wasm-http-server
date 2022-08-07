@@ -11,8 +11,8 @@
       async function hello() {
         const name = document.querySelector("#name").value
 
-        const res = await fetch('api/hello', {
-          method: 'POST',
+        const res = await fetch('https://randomuser.me/api/', {
+          method: 'GET',
           headers: {
             'Content-Type': 'application/json'
           },
